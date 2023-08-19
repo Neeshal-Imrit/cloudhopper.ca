@@ -5,22 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Under Maintenance</title>
-    <style>
-        /* Additional styles for the countdown */
-        .countdown {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const countdownElement = document.createElement('div');
             countdownElement.classList.add('countdown');
             document.body.appendChild(countdownElement);
             
-            // Set the target date for the end of maintenance (5 days from now)
+            // Set the target date for the end of maintenance (4 days from now)
             const targetDate = new Date();
-            targetDate.setDate(targetDate.getDate() + 5);
+            targetDate.setDate(targetDate.getDate() + 4);
             
             // Update the countdown every second
             function updateCountdown() {
@@ -39,9 +32,5 @@
     </script>
 </head>
 <body>
-    <div class="maintenance-container">
-        <h1>CloudHopper is Under Maintenance</h1>
-        <p>We're currently working on improving our website. Please check back later!</p>
-    </div>
 </body>
 </html>
