@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="sytles.css">
     <title>Under Maintenance</title>
     <script>
+
+
+        
         document.addEventListener('DOMContentLoaded', function() {
             const countdownElement = document.createElement('div');
             countdownElement.classList.add('countdown');
@@ -28,6 +31,13 @@
             
             // Update the countdown every second
             setInterval(updateCountdown, 1000);
+
+            // Set the title of the page
+            document.title = 'Under Maintenance';
+            document.querySelector('meta[name="description"]').setAttribute('content', 'This website is currently under maintenance. Please check back later.');
+            
+
+
         });
     </script>
 </head>
