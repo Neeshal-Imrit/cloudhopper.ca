@@ -5,41 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sytles.css">
     <title>Under Maintenance</title>
-    <script>
-
-
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const countdownElement = document.createElement('div');
-            countdownElement.classList.add('countdown');
-            document.body.appendChild(countdownElement);
-            
-            // Set the target date for the end of maintenance (4 days from now)
-            const targetDate = new Date();
-            targetDate.setDate(targetDate.getDate() + 4);
-            
-            // Update the countdown every second
-            function updateCountdown() {
-                const currentDate = new Date();
-                const timeDifference = targetDate - currentDate;
-                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-                countdownElement.textContent = `Maintenance will be completed in ${days} days. Luis is gay!`;
-            }
-            
-            // Initial update
-            updateCountdown();
-            
-            // Update the countdown every second
-            setInterval(updateCountdown, 1000);
-
-            // Set the title of the page
-            document.title = 'Under Maintenance';
-            document.querySelector('meta[name="description"]').setAttribute('content', 'This website is currently under maintenance. Please check back later.');
-            
-
-
-        });
-    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -51,12 +16,6 @@
         </div>
     </div>
     <script src="script.js"></script>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-    </nav>
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
   </nav>
 </body>
 </html>
