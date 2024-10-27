@@ -1,49 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<HTML lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sytles.css">
-    <title>Under Maintenance</title>
-    <script>
-
-
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const countdownElement = document.createElement('div');
-            countdownElement.classList.add('countdown');
-            document.body.appendChild(countdownElement);
-            
-            // Set the target date for the end of maintenance (4 days from now)
-            const targetDate = new Date();
-            targetDate.setDate(targetDate.getDate() + 4);
-            
-            // Update the countdown every second
-            function updateCountdown() {
-                const currentDate = new Date();
-                const timeDifference = targetDate - currentDate;
-                const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-                countdownElement.textContent = `Maintenance will be completed in ${days} days. Luis is gay!`;
-            }
-            
-            // Initial update
-            updateCountdown();
-            
-            // Update the countdown every second
-            setInterval(updateCountdown, 1000);
-
-            // Set the title of the page
-            document.title = 'Under Maintenance';
-            document.querySelector('meta[name="description"]').setAttribute('content', 'This website is currently under maintenance. Please check back later.');
-            
-
-
-        });
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-    <a href="./index.html">Home</a>
-    <a href="./about.html">About</a>
-  </nav>
+    <header>
+        <nav>  
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#languages">Programming Languages</a>"</li>
+                <li><a href="#pictures">Photography</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Project 1 description</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Project 2 description</p>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobby">
+                <h3>Hobby 1</h3>
+                <p>Hobby 1 description</p>
+            </div>
+            <div class="hobby">
+                <h3>Hobby 2</h3>
+                <p>Hobby 2 description</p>
+            </div>
+            <!-- Add more hobbies here -->
+        </section>
+
+        <section id="languages">
+            <h2>Programming Languages</h2>
+            <div class="language">
+                <h3>Language 1</h3>
+                <p>Language 1 description</p>
+            </div>
+            <div class="language">
+                <h3>Language 2</h3>
+                <p>Language 2 description</p>
+            </div>
+            <!-- Add more programming languages here -->
+        </section>
+
+        <section id="pictures">
+            <h2>Photography</h2>
+            <div class="picture">
+                <h3>Picture 1</h3>
+                <img src="picture1.jpg" alt="Picture 1">
+            </div>
+            <div class="picture">
+                <h3>Picture 2</h3>
+                <img src="picture2.jpg" alt="Picture 2">
+            </div>
+            <!-- Add more pictures here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <p>Contact: neeshalimrit@outlook.com</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</HTML>
