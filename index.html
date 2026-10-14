@@ -1,82 +1,138 @@
-<!DOCTYPE html>
-<HTML lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloud Hopper — the portfolio of Neeshal Imrit, a builder who makes complex systems feel lighter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cloud Hopper — Neeshal Imrit</title>
 </head>
 <body>
-    <header>
-        <nav>  
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#languages">Programming Languages</a>"</li>
-                <li><a href="#pictures">Photography</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Cloud Hopper home">
+      <span class="brand-mark">☁</span>
+      <span>cloud<span class="brand-dot">.</span>hopper</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#story">The story</a>
+      <a class="nav-cta" href="mailto:neeshalimrit@outlook.com">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Project 1 description</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Project 2 description</p>
-            </div>
-            <!-- Add more projects here -->
-        </section>
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Seeking full-time software roles · 2026 graduate</p>
+        <h1>I build things<br><em>that lift off.</em></h1>
+        <p class="hero-intro">Hi, I'm <strong>Neeshal Imrit</strong> — a software engineering student and builder of scalable backends, cloud tooling and data-driven systems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="mailto:neeshalimrit@outlook.com?subject=Full-time%20opportunity%20for%20Neeshal">I'm open to full-time roles <span>↗</span></a>
+          <a class="text-link" href="mailto:neeshalimrit@outlook.com">Email me <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span>Montreal, QC · Canada</span>
+          <span class="meta-line"></span>
+          <span>Cloud · Web · Systems</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="An animated rabbit hopping across a cloud" role="img">
+        <div class="sun"></div>
+        <span class="sky-label">CURRENTLY<br>IN THE CLOUD</span>
+        <div class="cloud cloud-back"></div>
+        <div class="cloud cloud-main">
+          <span class="cloud-face">· ᴗ ·</span>
+        </div>
+        <div class="rabbit">
+          <span class="ear ear-left"></span><span class="ear ear-right"></span>
+          <span class="rabbit-body"></span><span class="rabbit-tail"></span>
+          <span class="rabbit-eye"></span>
+        </div>
+        <span class="hop-note">hop hop hooray!</span>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </div>
+    </section>
 
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <div class="hobby">
-                <h3>Hobby 1</h3>
-                <p>Hobby 1 description</p>
-            </div>
-            <div class="hobby">
-                <h3>Hobby 2</h3>
-                <p>Hobby 2 description</p>
-            </div>
-            <!-- Add more hobbies here -->
-        </section>
+    <section class="ticker" aria-label="Areas of interest">
+      <div class="ticker-track">
+        <span>cloud migration</span><b>✳</b><span>thoughtful interfaces</span><b>✳</b><span>reliable systems</span><b>✳</b><span>cloud migration</span><b>✳</b><span>thoughtful interfaces</span><b>✳</b><span>reliable systems</span><b>✳</b>
+      </div>
+    </section>
 
-        <section id="languages">
-            <h2>Programming Languages</h2>
-            <div class="language">
-                <h3>Language 1</h3>
-                <p>Language 1 description</p>
-            </div>
-            <div class="language">
-                <h3>Language 2</h3>
-                <p>Language 2 description</p>
-            </div>
-            <!-- Add more programming languages here -->
-        </section>
+    <section id="work" class="section-wrap work-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Experience & projects</p><h2>Proof of<br><em>the hop.</em></h2></div>
+        <p class="section-blurb">From production .NET services at Sherweb to distributed systems and satellite collision analysis, here are the projects behind the person.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card featured">
+          <div class="card-top"><span>01</span><span class="card-tag">Sherweb · 2024</span></div>
+          <div class="card-visual visual-cloud"><span>☁</span><span>↗</span><i></i><i></i><i></i></div>
+          <h3>Software Engineering<br>Intern (Co-op)</h3>
+          <p>Developed .NET backend services with Angular frontends using Inversion of Control. Delivered five major features in Agile sprints with 80% code coverage and zero critical production bugs.</p>
+          <button class="card-link" data-toast="At Sherweb, a revenue-driving bundled-product project reduced provisioning time by 10%.">Read the impact <span>↗</span></button>
+        </article>
+        <article class="work-card">
+          <div class="card-top"><span>02</span><span class="card-tag">Platform · 2026—</span></div>
+          <div class="card-visual visual-web"><span>&lt;/&gt;</span><div class="mini-window"><b></b><b></b><b></b><i></i><i></i></div></div>
+          <h3>Distributed<br>Microservice Platform</h3>
+          <p>A Ruby on Rails gateway and high-performance Go microservice communicating asynchronously through Redis message queues, containerized with Docker and automated CI/CD.</p>
+          <button class="card-link" data-toast="Go + Ruby + Redis + Docker: a multi-tier platform designed to move independently.">See the stack <span>↗</span></button>
+        </article>
+        <article class="work-card">
+          <div class="card-top"><span>03</span><span class="card-tag">Research projects</span></div>
+          <div class="card-visual visual-signal"><span>⌁</span><span>⌁</span><span>⌁</span></div>
+          <h3>Data, orbitals<br>& language</h3>
+          <p>Built a Django collision-avoidance system processing 100 GB of telemetry, and a DistilBERT/LSTM classifier that reached 94.30% test accuracy.</p>
+          <button class="card-link" data-toast="The Canadian Space Agency project identified collision risk in real time using parallel processing.">Explore the research <span>↗</span></button>
+        </article>
+      </div>
+      <div class="experience-strip">
+        <div class="experience-label">Sherweb<br><span>Longueuil, QC</span></div>
+        <div class="experience-item"><span>May 2025 — Aug 2025</span><strong>Software Engineering Intern</strong><p>.NET · Angular · IoC · Agile delivery</p></div>
+        <div class="experience-item"><span>May 2024 — Aug 2024</span><strong>Software Engineering Intern</strong><p>C# · DDD · ASP.NET Core · Azure API Management</p></div>
+        <div class="experience-item"><span>May 2023 — Aug 2023</span><strong>System DevOps Intern</strong><p>PowerShell · Windows/Azure deployments · SFTP</p></div>
+      </div>
+    </section>
 
-        <section id="pictures">
-            <h2>Photography</h2>
-            <div class="picture">
-                <h3>Picture 1</h3>
-                <img src="picture1.jpg" alt="Picture 1">
-            </div>
-            <div class="picture">
-                <h3>Picture 2</h3>
-                <img src="picture2.jpg" alt="Picture 2">
-            </div>
-            <!-- Add more pictures here -->
-        </section>
-    </main>
+    <section id="experience" class="experience-section section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / Full experience</p><h2>Where I’ve<br><em>made things work.</em></h2></div><p class="section-blurb">Five roles across software engineering, DevOps and automation — with measurable improvements to releases, QA and operations.</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-date">May 2026 — Aug 2026</div><div class="timeline-content"><div class="timeline-heading"><h3>Software Developer Intern <span>(Co-op)</span></h3><span class="company">Desjardins · Montreal, QC</span></div><ul><li>Implemented automated CI/CD pipelines with GitHub Actions, accelerating release cycles by 20% and improving build reliability.</li><li>Developed automated end-to-end testing scripts using Python and Robot Framework, reducing manual QA hours.</li><li>Enhanced observability by integrating Dynatrace and Jira X-Ray synthetic pre-tests, reducing unexpected integration-test failures.</li></ul><div class="timeline-tags"><span>Python</span><span>Robot Framework</span><span>GitHub Actions</span><span>Dynatrace</span></div></div></article>
+        <article class="timeline-item timeline-current"><div class="timeline-date">Jan 2020 — May 2026</div><div class="timeline-content"><div class="timeline-heading"><h3>Automation Specialist <span>(Part-Time)</span></h3><span class="company">Sherweb · Longueuil, QC</span></div><ul><li>Developed C# and PowerShell automation scripts that optimized operational workflow efficiency.</li><li>Automated B2B data synchronization using Webhooks, Azure Cosmos DB and Azure Functions.</li><li>Built Infrastructure-as-Code solutions with Terraform and Docker, reducing deployment time and configuration drift.</li><li>Collaborated with Sales, Development and Operations to implement and scale enterprise automation scripts.</li></ul><div class="timeline-tags"><span>C#</span><span>PowerShell</span><span>Azure Functions</span><span>Cosmos DB</span><span>Terraform</span></div></div></article>
+        <article class="timeline-item"><div class="timeline-date">May 2025 — Aug 2025</div><div class="timeline-content"><div class="timeline-heading"><h3>Software Engineering Intern <span>(Co-op)</span></h3><span class="company">Sherweb · Longueuil, QC</span></div><ul><li>Developed and integrated .NET backend services with Angular frontends using Inversion of Control principles.</li><li>Delivered 5 major features during cross-functional Agile sprints while maintaining 80% code coverage and zero critical production bugs.</li><li>Contributed to a revenue-driving bundled-product project that reduced provisioning time by 10%.</li></ul><div class="timeline-tags"><span>.NET</span><span>Angular</span><span>Agile</span><span>80% coverage</span></div></div></article>
+        <article class="timeline-item"><div class="timeline-date">May 2024 — Aug 2024</div><div class="timeline-content"><div class="timeline-heading"><h3>Software Engineering Intern <span>(Co-op)</span></h3><span class="company">Sherweb · Longueuil, QC</span></div><ul><li>Engineered scalable C# backend services using Domain-Driven Design and ASP.NET Core.</li><li>Built full-stack solutions with Angular, Entity Framework, SQL Server, MongoDB and RabbitMQ.</li><li>Standardized Azure API Management integration through reusable abstract classes to streamline development.</li></ul><div class="timeline-tags"><span>C#</span><span>DDD</span><span>ASP.NET Core</span><span>RabbitMQ</span></div></div></article>
+        <article class="timeline-item"><div class="timeline-date">May 2023 — Aug 2023</div><div class="timeline-content"><div class="timeline-heading"><h3>System DevOps Intern <span>(Co-op)</span></h3><span class="company">Sherweb · Longueuil, QC</span></div><ul><li>Engineered custom PowerShell scripts and reusable administrative templates for Windows/Azure deployments, resource allocation and SFTP transfers.</li><li>Decreased manual setup time by 60% through repeatable operational tooling.</li></ul><div class="timeline-tags"><span>PowerShell</span><span>Azure</span><span>Windows</span><span>SFTP</span></div></div></article>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-        <p>Contact: neeshalimrit@outlook.com</p>
-    </footer>
+    <section id="about" class="about-section">
+      <div class="section-wrap about-grid">
+        <div><p class="eyebrow">03 / Education & toolkit</p><h2>Ready for<br><em>the next leap.</em></h2><div class="education-card"><span class="education-year">Sep 2022 — Dec 2026</span><strong>Bachelor of Software Engineering</strong><span>Co-op Program · McGill University · Montreal, QC</span></div></div>
+        <div class="about-copy"><p>My experience spans scalable C# services, full-stack product work, infrastructure automation and machine learning. I like understanding the whole system — from an API contract to the deployment pipeline.</p><p class="coursework"><strong>Relevant coursework</strong><br>Data Structures & Algorithms · Computer Vision · Applied Machine Learning · Programming Languages & Paradigms · Software Validation · Algorithm Design · Operating Systems</p><div class="skills"><span>Python</span><span>C#</span><span>Java</span><span>Go</span><span>Ruby</span><span>C / Bash</span><span>JavaScript</span><span>HTML / CSS</span><span>PowerShell</span><span>Clojure</span><span>OCaml</span><span>.NET</span><span>Spring Boot</span><span>Django</span><span>Pandas / NumPy</span><span>PyTorch</span><span>SQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Azure Cosmos DB</span><span>Azure</span><span>Docker</span><span>Terraform</span><span>GitHub Actions</span><span>Dynatrace</span><span>Datadog</span></div><div class="credentials"><span>Microsoft Certified: Azure Administrator Associate</span><span>French · Native</span><span>English · Full Professional</span></div></div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="story" class="section-wrap story-section">
+      <div class="story-card">
+        <div class="story-label">Why “Cloud Hopper”?</div>
+        <div class="story-content"><span class="quote-mark">“</span><h2>What do you call a rabbit who migrates <em>everything</em> to the cloud?</h2><p>…a <strong>cloud hopper</strong>, obviously.</p><small>It’s a silly name with a serious backstory: my CV has a recurring theme of moving systems forward — Azure deployments, API management, Dockerized services, CI/CD pipelines, emails, websites and servers. The rabbit is just here to make the leap more fun.</small></div>
+        <div class="story-rabbit">🐇<span>☁</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap">
+      <p class="eyebrow">04 / Let’s work together</p><h2>Looking for a<br>full-time <em>teammate?</em></h2><p class="contact-subtitle">I’m graduating from McGill’s Software Engineering Co-op Program in December 2026 and actively looking for a full-time software engineering or developer role.</p><div class="contact-details"><a href="tel:+14388812223">438-881-2223</a><a href="mailto:neeshalimrit@outlook.com">neeshalimrit@outlook.com</a><a href="https://linkedin.com/in/neeshal-imrit" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><a class="button button-light" href="mailto:neeshalimrit@outlook.com?subject=Full-time%20opportunity%20for%20Neeshal">Let’s talk about the role <span>↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap"><span>© 2026 Neeshal Imrit</span><span>Made with curiosity & a little cloud cover ☁</span><a href="#top">Back to top ↑</a></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
-</HTML>
+</html>

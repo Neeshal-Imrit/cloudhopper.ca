@@ -1,33 +1,22 @@
-// JavaScript for any interactive elements
-document.addEventListener('DOMContentLoaded', function() {
-    // Example: Simple image carousel functionality
-    const carousel = document.querySelector('.carousel');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+document.addEventListener("DOMContentLoaded", () => {
+  const toast = document.querySelector(".toast");
+  let toastTimer;
 
-    carousel.addEventListener('mousedown', (e) => {
-        isDown = true;
-        carousel.classList.add('active');
-        startX = e.pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
+  document.querySelectorAll("[data-toast]").forEach((button) => {
+    button.addEventListener("click", () => {
+      toast.textContent = button.dataset.toast;
+      toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove("show"), 3200);
     });
+  });
 
-    carousel.addEventListener('mouseleave', () => {
-        isDown = false;
-        carousel.classList.remove('active');
+  const rabbit = document.querySelector(".rabbit");
+  if (rabbit && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelector(".hero-art").addEventListener("pointermove", (event) => {
+      const bounds = event.currentTarget.getBoundingClientRect();
+      const x = ((event.clientX - bounds.left) / bounds.width - 0.5) * 8;
+      rabbit.style.marginLeft = `${x}px`;
     });
-
-    carousel.addEventListener('mouseup', () => {
-        isDown = false;
-        carousel.classList.remove('active');
-    });
-
-    carousel.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
-        carousel.scrollLeft = scrollLeft - walk;
-    });
+  }
 });
